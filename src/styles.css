@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --header-bg-color: #2973B2;
+    --sidebar-bg-color: #48A6A7;
+    --content-bg-color: #9ACBD0;
+
+    --tasks-bg-color: #F2EFE7;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+header {
+    grid-column: 1/end;
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+header .title {
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg-color);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sidebar-options {
+    margin-right: 40px;
+}
+
+.content {
+    background-color: var(--content-bg-color);
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.content .title {
+    grid-column: 1/end;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+}
+.content .task {
+    background-color: var(--tasks-bg-color);
+    color: black;
+    margin: 10px 50px 10px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 1fr 1fr 0.5fr;
+}
+button {
+    background-color: #2973B2;
+    color: white
+}
