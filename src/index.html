@@ -13,7 +13,10 @@
     <div class="sidebar">
         <ul class="sidebar-options">
             <li id="home">Home</li>
-            <li id="projects">Projects</li>
+            <li id="projects">
+                <div class="title">Projects</div>
+                <button class="new-todo">+</button>
+            </li>
         </ul>
     </div>
 
@@ -30,7 +33,18 @@
                 <button class="task-remove">Remove</button>
             </div>
     </div>
-
     </div>
+    
+    <form>
+        <div class="header">Create a new todo</div>
+        <div class="sidebar">sidebar</div>
+        <div class="content">
+
+            <input type=text id="title" placeholder="Task Title:">
+            <input type=textarea id="description" placeholder="Details:">
+
+        </div>
+    </form>
+
 </body>
 </html>
